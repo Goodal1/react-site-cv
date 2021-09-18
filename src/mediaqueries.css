@@ -44,7 +44,7 @@
 /*--NAVIGATION FLOTTANTE--*/
 @media screen and (max-width:970px){
 
-    .navig-right{
+    .floating-menu{
         display: none;
     }
 }
