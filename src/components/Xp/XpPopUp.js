@@ -10,6 +10,7 @@ class XpPopUp extends React.Component {
         <span>2020-2021</span>
         <h2>{this.props.title}</h2>
         <img src="https://www.n-py.com/sites/n-py/files/commons/2019-2020/Hiver/Home/logo_luz.png" />
+        <p>{this.props.desc}</p>
       </div>
     );
   }

@@ -39,6 +39,7 @@ class Xp extends React.Component {
       activeKey: activeKey,
       currentItem: {
         title: dataList.titre,
+        desc: dataList.desc,
       },
     });
   }
@@ -115,6 +116,8 @@ class Xp extends React.Component {
                       boite={ele.boite}
                       tags={Array.from(ele.tags.split(','))}
                       lien={ele.lien}
+                      desc={ele.desc}
+                      logo={ele.logo}
                     />
                   );
                 })}
@@ -123,7 +126,7 @@ class Xp extends React.Component {
           <div>
             <img src="img/wall.png" />
           </div>
-          <XpPopUp title={this.state.currentItem.title}></XpPopUp>
+          <XpPopUp title={this.state.currentItem.title} desc={this.state.currentItem.desc}></XpPopUp>
         </div>
       </section>
     );
