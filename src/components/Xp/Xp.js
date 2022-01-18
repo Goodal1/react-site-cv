@@ -24,27 +24,7 @@ class Xp extends React.Component {
 
     this.componentDidMount = this.componentDidMount.bind(this);
     this.handleClick = this.handleClick.bind(this);
-    this.createPopUp = this.createPopUp.bind(this);
   }
-
-  //Affichage et remplissage de la popup
-  handleClick(event) {
-    let dataList = '';
-    const high = Array.from(event.target.dataset.dateslist.split(','));
-    const activeKey = parseInt(event.target.id);
-    dataList = this.state.data[activeKey - 1];
-    console.log(dataList);
-    this.setState({
-      high: high,
-      activeKey: activeKey,
-      currentItem: {
-        title: dataList.titre,
-        desc: dataList.desc,
-      },
-    });
-  }
-
-  createPopUp(index) {}
 
   //Appel de l'api
   async componentDidMount() {
@@ -52,7 +32,6 @@ class Xp extends React.Component {
     const response = await fetch(url);
     const data = await response.json();
 
-    //Retravail des dates
     let datesArray = [];
     const datesList = [];
 
@@ -84,6 +63,31 @@ class Xp extends React.Component {
       datesArray: datesArray,
       datesList: datesList,
     });
+  }
+
+  //Affichage et remplissage de la popup
+  handleClick(event) {
+    let dataList = '';
+
+    const high = Array.from(event.target.dataset.dateslist.split(','));
+    const activeKey = parseInt(event.target.id);
+    dataList = this.state.data[activeKey - 1];
+
+    this.setState({
+      high: high,
+      activeKey: activeKey,
+      currentItem: {
+        title: dataList.titre,
+        desc: dataList.desc,
+      },
+    });
+
+    this.deployPopup();
+  }
+
+  deployPopup() {
+    const popup = document.querySelector('.xp-popup');
+    popup.style.display = 'block';
   }
 
   //Affichage html

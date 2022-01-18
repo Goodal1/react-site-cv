@@ -5,10 +5,12 @@
   --line: #4d4d4d;
   --lineDark: #262738;
   --red: #f81475;
-  --white: #dcddde;
+  --white: #ffffff;
   --corail: #3fddf6;
   --purple1: #c279eb;
   --purple2: #4d1058;
+  --background: #f1fdff;
+  --shadow: 0px 0px 55px rgb(38 114 190 / 16%);
 }
 
 * {
@@ -105,6 +107,7 @@ header {
   grid-template-columns: 10% 1fr 20%;
   font-size: 1rem;
   height: 10vh;
+  background: var(--white);
 }
 
 /*--burger---*/
@@ -180,6 +183,7 @@ header li {
 
 header li a {
   text-decoration: none;
+  color: var(--text);
 }
 
 header li a:hover {
@@ -189,8 +193,17 @@ header li a:hover {
 
 .menu-container {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 900;
   padding: 20px 0px;
+  color: var(--text);
+}
+
+.menu-container:focus {
+  color: var(--text);
+}
+
+.menu-container:visited {
+  color: var(--text);
 }
 
 /*--menu mobile--*/
@@ -249,7 +262,7 @@ header li a:hover {
   border-top: none;
 }
 
-/*--menu-flottant--*/
+/*--menu-flottant - retiré--*/
 
 .floating-menu {
   position: absolute;
@@ -281,13 +294,13 @@ header li a:hover {
   font-size: 0.8rem;
 }
 
-input[type='checkbox'] {
+.darkmode-container input[type='checkbox'] {
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-label {
+.darkmode-container label {
   cursor: pointer;
   text-indent: 50px;
   width: 39px;
@@ -297,9 +310,10 @@ label {
   border-radius: 100px;
   border: 1px solid var(--red);
   position: relative;
+  color: var(--text);
 }
 
-label:after {
+.darkmode-container label:after {
   content: '';
   position: absolute;
   top: 3px;
@@ -311,17 +325,17 @@ label:after {
   transition: 0.3s;
 }
 
-input:checked + label {
+.darkmode-container input:checked + label {
   background: var(--red);
 }
 
-input:checked + label:after {
+.darkmode-container input:checked + label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
   background: var(--dark2);
 }
 
-label:active:after {
+.darkmode-container label:active:after {
   width: 130px;
 }
 
@@ -331,18 +345,16 @@ label:active:after {
   height: 90vh;
   overflow: hidden;
   width: 100%;
-  padding: 2% 5% 4% 5%;
   box-sizing: border-box;
 }
 
 .main-banner-bg {
-  background: #f1fdff;
+  background: var(--background);
   padding: 4%;
   text-align: center;
   box-sizing: border-box;
   overflow: hidden;
   height: 100%;
-  border-radius: 20px;
   color: var(--text);
 }
 
@@ -374,18 +386,16 @@ label:active:after {
   height: 90vh;
   overflow: hidden;
   width: 100%;
-  padding: 2% 5% 4% 5%;
   box-sizing: border-box;
 }
 
 .prez-banner-bg {
-  background: #f1fdff;
+  background: var(--background);
   padding: 0 4%;
   text-align: center;
   box-sizing: border-box;
   overflow: hidden;
   height: 100%;
-  border-radius: 20px;
   color: var(--text);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -423,7 +433,7 @@ label:active:after {
   margin: 10px;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: var(--white);
   box-shadow: 0px 0px 55px rgb(38 114 190 / 16%);
   transition: all 0.4s;
   position: absolute;
@@ -444,24 +454,37 @@ label:active:after {
   box-shadow: 0px 0px 55px rgb(38 114 190 / 25%);
 }
 
+@media screen and (max-width: 968px) {
+  .prez-banner-bg {
+    position: relative;
+  }
+  .prez-text {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: var(--white);
+    max-width: 90%;
+    left: 50%;
+  }
+}
+
 /*--EXPERIENCE--*/
 
 .xp {
   height: 90vh;
   overflow: hidden;
   width: 100%;
-  padding: 2% 5% 4% 5%;
   box-sizing: border-box;
 }
 
 .xp-container {
-  background: #f1fdff;
+  background: var(--background);
   padding: 0 4%;
   text-align: center;
   box-sizing: border-box;
   overflow: hidden;
   height: 100%;
-  border-radius: 20px;
   color: var(--text);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -488,7 +511,7 @@ label:active:after {
 
 .xp-slider-item {
   margin: 20px 0px;
-  background: #fff;
+  background: var(--white);
   padding: 30px;
   box-sizing: border-box;
   width: 70%;
@@ -519,28 +542,32 @@ label:active:after {
 }
 
 .xp-boite {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 25px;
 }
 
 .xp-tag {
   margin: 0px 10px 10px 0px;
-  padding: 5px 9px;
-  font-size: 12px;
+  padding: 4px 9px;
+  font-size: 0.7em;
   display: inline-block;
   border-radius: 32px;
-
-  color: #9fa8b1;
+  background: #5538c1;
+  color: #fff;
 }
 
 .xp-type {
-  margin: 0px 10px 10px 0px;
-  padding: 5px 9px;
+  margin: 10px 0px 10px 0px;
+  padding: 4px 9px;
   font-size: 12px;
   border-radius: 32px;
   background: #ffa264;
   color: #fff;
   display: inline-block;
+}
+
+.xp-taglist {
+  margin: 20px 0px;
 }
 
 .xp-lien {
@@ -551,9 +578,10 @@ label:active:after {
   cursor: pointer;
   text-decoration: none;
   border-bottom: 2px dashed var(--text);
+  transition: all 0.3s;
 }
 
-.xp-lien:hover {
+.xp-slider-item:hover .xp-lien {
   color: var(--red);
   border-bottom: 2px dashed var(--red);
 }
@@ -582,7 +610,8 @@ label:active:after {
   position: absolute;
   height: 100vh;
   width: 50vw;
-  background: #ffffff;
+  background: var(--white);
+  opacity: 0.98;
   color: var(--text);
   top: 0;
   right: 0;
@@ -591,6 +620,24 @@ label:active:after {
   box-sizing: border-box;
   box-shadow: -14px 0px 16px #8284c826;
   text-align: left;
+  display: none;
+}
+
+.xp-popup > div:first-of-type {
+  text-align: right;
+}
+
+.xp-popup div img {
+  background: var(--red);
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.xp-popup div img:hover {
+  background: var(--purple2);
+  transform: rotate(5deg);
 }
 
 @keyframes makeItPopUp {
@@ -605,4 +652,62 @@ label:active:after {
 
 .highlighted {
   color: red;
+}
+
+/*--PORTFOLIO--*/
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background: var(--background);
+  color: var(--text);
+  height: 90vh;
+}
+
+.portfolio > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  max-width: 100%;
+}
+
+.portfolio-mosaic {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+}
+
+.portfolio-mosaic div {
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.portfolio-mosaic div img {
+  border-radius: 10px;
+}
+
+.portfolio-mosaic div img {
+  max-width: 315px;
+}
+
+.portfolio-mosaic div:first-child img {
+  max-width: 400px;
+}
+
+.portfolio-mosaic div h4 {
+  font-weight: 400;
+}
+
+.portfolio-mosaic div a {
+  display: block;
+  background: var(--red);
+  color: #fff;
+  padding: 10px;
+  margin: 15px 0px 0px 0px;
+  width: fit-content;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 13px;
 }

@@ -18,14 +18,14 @@ class XpItem extends React.Component {
 
     return (
       <div className="xp-slider-item" id={this.props.id} onClick={this.props.clic.bind(this)} data-dateslist={datesList}>
-        <p>
+        <p className="xp-date">
           {this.props.startDate}-{this.props.endDate}
         </p>
         <div className="xp-type">{this.props.type}</div>
         <h3>{this.props.titre}</h3>
-        <p>{this.props.boite}</p>
+        <p className="xp-boite">{this.props.boite}</p>
 
-        <p> {tagList}</p>
+        <p className="xp-taglist"> {tagList}</p>
         <a className="xp-lien" href={this.props.lien}>
           En savoir plus
         </a>

@@ -7,6 +7,7 @@ import Mainbanner from './components/Mainbanner';
 import Presentation from './components/Presentation';
 import Xp from './components/Xp/Xp';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" exact component={Mainbanner} />
         <Route path="/presentation" component={Presentation} />
         <Route path="/experience" component={Xp} />
+        <Route path="/portfolio" component={Portfolio} />
       </div>
     </Router>
   );
