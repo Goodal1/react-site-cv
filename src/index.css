@@ -132,7 +132,7 @@ header {
 .burger div {
   height: 4px;
   margin: 8px auto;
-  background: var(--white);
+  background: var(--red);
   border-radius: 500px;
   width: 84%;
 }
@@ -243,13 +243,15 @@ header li a:hover {
 .links-container li {
   list-style-type: none;
   padding: 2rem 0;
-  border-top: 1px dashed #38384a;
+
   font-weight: 900;
   font-size: 0.9rem;
 }
 
 .links-container li a {
-  color: var(--white);
+  color: var(--text);
+  border-bottom: 2px dashed var(--text);
+  padding-bottom: 5px;
   text-decoration: none;
 }
 
@@ -262,6 +264,15 @@ header li a:hover {
   border-top: none;
 }
 
+@media screen and (max-width: 968px) {
+  .menu-mobile {
+    width: 100%;
+  }
+
+  .menu-mobile img {
+    background: var(--red);
+  }
+}
 /*--menu-flottant - retiré--*/
 
 .floating-menu {
@@ -359,7 +370,7 @@ header li a:hover {
 }
 
 .main-banner-bg p {
-  margin-bottom: 30px;
+  margin: 30px auto;
 }
 
 .main-banner-elements {
@@ -414,6 +425,7 @@ header li a:hover {
 .prez-text p {
   font-size: 16px;
   line-height: 28px;
+  margin: 15px 0px;
 }
 
 .prez-icones {
@@ -457,6 +469,7 @@ header li a:hover {
 @media screen and (max-width: 968px) {
   .prez-banner-bg {
     position: relative;
+    display: block;
   }
   .prez-text {
     position: absolute;
@@ -464,8 +477,16 @@ header li a:hover {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     background: var(--white);
-    max-width: 90%;
     left: 50%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    width: 360px;
+    max-width: 70vw;
+  }
+
+  .prez-text div {
+    padding: 0;
   }
 }
 

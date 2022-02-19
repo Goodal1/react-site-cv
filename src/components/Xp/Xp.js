@@ -127,7 +127,7 @@ class Xp extends React.Component {
                 })}
           </div>
 
-          <div>
+          <div className="xp-image">
             <img src="img/wall.png" />
           </div>
           <XpPopUp title={this.state.currentItem.title} desc={this.state.currentItem.desc}></XpPopUp>

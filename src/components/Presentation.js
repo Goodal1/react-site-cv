@@ -39,12 +39,13 @@ class Presentation extends React.Component {
         <div className="prez-banner-bg">
           <div className="prez-text">
             <div>
-              <h2>Ce que je fais au quotidien</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h2>Je gère des projets web (enfin j'essaie !)</h2>
               <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                Travaillant dans le web & le digital depuis 2013, j'ai eu la chance de toucher à beaucoup d'aspects de la création et de la promotion de produit digitaux : développement front-end,
+                webdesign, webmarketing, gestion de projet, pilotage de prestataires..
               </p>
+              <p>Alors, oui, ce sont des domaines différents, et non, je n'ai fait le tour d'aucun d'eux. Je suis polyvalent mais n'ai en conterpartie aucune réelle spécialité.</p>
+              <p>Si vous me demandez ce que je préfére : le développement front-end !</p>
             </div>
           </div>
           <div className="prez-icones">
