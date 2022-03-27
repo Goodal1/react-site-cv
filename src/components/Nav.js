@@ -38,7 +38,7 @@ class Nav extends React.Component {
       root.style.setProperty('--dark1', '#26283B');
       root.style.setProperty('--dark2', '#fff');
       root.style.setProperty('--white', '#26283B');
-      root.style.setProperty('--text', '#fff');
+      root.style.setProperty('--text', '#dedee3');
       root.style.setProperty('--background', '#0a0619');
     } else {
       root.style.setProperty('--dark1', '#fff');
