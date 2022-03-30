@@ -9,12 +9,13 @@ class XpPopUp extends React.Component {
   render() {
     return (
       <div className="xp-popup">
+        <img src="../img/robby-left.png" alt="" className="popup-robby"></img>
         <div>
           <img src="../img/icons/ic-close.svg" alt="" className="close-popup" onClick={this.closePopup} />
         </div>
         <span>2020-2021</span>
         <h2>{this.props.title}</h2>
-        <img src="https://www.n-py.com/sites/n-py/files/commons/2019-2020/Hiver/Home/logo_luz.png" />
+        <img className="job-logo" src="../img/icons/homme-robot.png" />
         <p>{this.props.desc}</p>
       </div>
     );

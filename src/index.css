@@ -639,13 +639,21 @@ header li a:hover {
   animation: makeItPopUp 0.7s forwards;
   padding: 4%;
   box-sizing: border-box;
-  box-shadow: -14px 0px 16px #8284c826;
+  box-shadow: -233px 0px 200px #8284c8;
   text-align: left;
   display: none;
 }
 
 .xp-popup > div:first-of-type {
   text-align: right;
+}
+
+.xp-popup .popup-robby {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  transform: translateX(-100%);
 }
 
 .xp-popup div img {
@@ -659,6 +667,10 @@ header li a:hover {
 .xp-popup div img:hover {
   background: var(--purple2);
   transform: rotate(5deg);
+}
+
+.xp-popup .job-logo {
+  max-height: 100px;
 }
 
 @keyframes makeItPopUp {
