@@ -120,7 +120,7 @@ class Xp extends React.Component {
                       boite={ele.boite}
                       tags={Array.from(ele.tags.split(','))}
                       lien={ele.lien}
-                      desc={ele.desc}
+                      desc={ele.deschat}
                       logo={ele.logo}
                     />
                   );
@@ -130,7 +130,7 @@ class Xp extends React.Component {
           <div className="xp-image">
             <img src="img/robby-doigt.png" />
           </div>
-          <XpPopUp title={this.state.currentItem.title} desc={this.state.currentItem.desc}></XpPopUp>
+          <XpPopUp title={this.state.currentItem.title} desc={this.state.currentItem.deschat} longdesc={this.state.currentItem.longdesc}></XpPopUp>
         </div>
       </section>
     );
