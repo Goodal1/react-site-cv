@@ -11,11 +11,10 @@ class Contact extends React.Component {
         <div>
           <h2>On s'écrit ?</h2>
           <p>
-            <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</b>
+            <b>Vous trouverez ci-dessous mon formulaire de contact</b>
           </p>
           <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur.
+            Je suis également joignable par <a href="tel:+33622809394">téléphone</a> ou par <a href="mailto:ivain.bordeneuve@gmail.com">email</a>, à votre convenance !
           </p>
         </div>
         <div className="contactform-container">

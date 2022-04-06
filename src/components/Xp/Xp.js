@@ -18,7 +18,8 @@ class Xp extends React.Component {
         date: 'date',
         title: 'placeholder titre',
         img: 'img',
-        desc: 'desc',
+        deschat: 'deschat',
+        longdesc: 'longdesc',
       },
     };
 
@@ -78,7 +79,8 @@ class Xp extends React.Component {
       activeKey: activeKey,
       currentItem: {
         title: dataList.titre,
-        desc: dataList.desc,
+        deschat: dataList.deschat,
+        longdesc: dataList.longdesc,
       },
     });
 
@@ -120,7 +122,8 @@ class Xp extends React.Component {
                       boite={ele.boite}
                       tags={Array.from(ele.tags.split(','))}
                       lien={ele.lien}
-                      desc={ele.deschat}
+                      deschat={ele.deschat}
+                      longdesc={ele.longdesc}
                       logo={ele.logo}
                     />
                   );
@@ -130,7 +133,7 @@ class Xp extends React.Component {
           <div className="xp-image">
             <img src="img/robby-doigt.png" />
           </div>
-          <XpPopUp title={this.state.currentItem.title} desc={this.state.currentItem.deschat} longdesc={this.state.currentItem.longdesc}></XpPopUp>
+          <XpPopUp title={this.state.currentItem.title} deschat={this.state.currentItem.deschat} longdesc={this.state.currentItem.longdesc}></XpPopUp>
         </div>
       </section>
     );
