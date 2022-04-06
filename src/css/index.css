@@ -1,0 +1,128 @@
+:root {
+  --text: #26283b;
+  --dark1: #26283b;
+  --dark2: #0a0619;
+  --line: #4d4d4d;
+  --lineDark: #262738;
+  --red: #f81475;
+  --white: #ffffff;
+  --corail: #3fddf6;
+  --purple1: #c279eb;
+  --purple2: #4d1058;
+  --background: #f1fdff;
+  --shadow: 0px 0px 55px rgb(38 114 190 / 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;800&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+  /* background-image:url('./img/main-banner.jpg');
+    background-color:var(--dark2); */
+
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/*----COMMUNS-----*/
+
+h1 {
+  font-weight: 900;
+  font-size: 9em;
+  text-transform: uppercase;
+  color: #3e4160v;
+  margin-top: 15%;
+}
+
+h1:last-child {
+  z-index: 1;
+}
+
+h1 span {
+  color: var(--red);
+  font-size: 37px;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+h2 span {
+  border-bottom: 6px solid red;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 900;
+  padding: 10px 0px;
+}
+
+.btn-red {
+  background: var(--red);
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 2px;
+  margin: 36px 0;
+}
+
+/*-----LOADER----*/
+.loader {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  animation: rollin 0.7s ease-out forwards;
+  z-index: 99;
+  transform: scale(5);
+  transform: scale(5) translateY(-35%) translateX(0%);
+}
+
+@keyframes rollin {
+  from {
+    transform: scale(5) translateX(0%);
+  }
+
+  to {
+    transform: scale(4) translateX(100%);
+  }
+}
+
+
+@media screen and (max-width: 1590px) {
+  h1 {
+    font-size: 8em;
+  }
+}
+
+@media screen and (max-width: 1435px) {
+  h1 {
+    font-size: 7em;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  h1 {
+    font-size: 7em;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  h1 {
+    font-size: 4em;
+    margin: 0;
+  }
+}
+

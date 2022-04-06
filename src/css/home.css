@@ -1,0 +1,68 @@
+/*--MAIN BANNER --*/
+
+.main-banner {
+    height: 90vh;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .main-banner-bg {
+    background: var(--background);
+    padding: 4%;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+    color: var(--text);
+  }
+  
+  .main-banner-bg p {
+    margin: 30px auto;
+  }
+  
+  .main-banner-elements {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+  }
+  
+  .main-banner-robot-container {
+    text-align: center;
+  }
+  
+  #robot {
+    height: 85vh;
+    width: auto;
+    transform: translateX(-50%);
+    transition-duration: 1s;
+    pointer-events: none;
+  }
+
+@media screen and (max-width:840px) {
+  .main-banner-elements {
+    display: block;
+    position: relative;
+  }
+
+  .main-banner-elements h1 {
+   display: block ;
+   margin:auto;
+   z-index:2
+  }
+
+.main-banner-robot-container{
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  display: block;
+}
+
+#robot {
+  transform: translateX(0%)!important;
+  max-width: 100%;
+    height: auto;
+}
+
+}

@@ -4,20 +4,21 @@
         "date":"2018-2021",
         "titre":"Responsable Digital",
         "boite":"NPy Nouvelles Pyrénées",
-        "tags":"tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6",
-        "lien":"maxijose.com",
+        "tags":"Management, Gestion de projet, Expression de besoin, Relation fournisseurs, Ui Design",
+        "lien":"https://www.n-py.com",
         "id":"1",
         "type":"job",
         "logo":"../img/logo.png",
-        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "deschat":"Gestion et management d’une équipe de 6 personnes qui ont pour mission d’améliorer l’expérience client digitale globale de stations de ski (9 stations).",
+        "longdesc":"Concrètement, cela se traduit par la rédaction de cahier des charges, la réalisation de prototypes et l'étude des problématiques rencontrées avec les développeurs. La principale difficulté : arriver à structurer des contenus à la fois efficaces pour les moteurs de recherche, et simples pour le sutilisateurs"
 
     },
     {
         "date":"2015-2018",
         "titre":"Assistant digital",
         "boite":"NPy Nouvelles Pyrénées",
-        "tags":"tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6",
-        "lien":"maxijose.com",
+        "tags":"Emailing,Html,Css,Javascript, Ui Design",
+        "lien":"https://www.n-py.com",
         "id":"2",
         "type":"job",
         "logo":"../img/logo.png",

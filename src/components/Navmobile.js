@@ -38,14 +38,17 @@ class Navmobile extends React.Component {
           <div className="links-container">
             <ul>
               <li>
+                <a href="./">Accueil</a>
+              </li>
+              <li>
                 <a href="./presentation">Présentation</a>
               </li>
               <li>
                 <a href="./experience">Expérience</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="./portfolio">Portfolio</a>
-              </li>
+              </li> */}
               <li>
                 <a href="./contact">Contact</a>
               </li>

@@ -20,7 +20,6 @@ function App() {
         <Route path="/" exact component={Mainbanner} />
         <Route path="/presentation" component={Presentation} />
         <Route path="/experience" component={Xp} />
-        <Route path="/portfolio" component={Portfolio} />
         <Route path="/contact" component={Contact} />
       </div>
     </Router>

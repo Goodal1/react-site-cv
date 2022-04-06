@@ -1,0 +1,135 @@
+.prez-banner {
+    height: 90vh;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .prez-banner-bg {
+    background: var(--background);
+    padding: 0 4%;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+    color: var(--text);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .prez-text {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  
+  .prez-text div {
+    padding: 0 15%;
+  }
+  
+  .prez-text p {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 15px 0px;
+  }
+  
+  .prez-icones {
+    height: 100%;
+    position: relative;
+  }
+  
+  .prez-icones li {
+    list-style-type: none;
+    display: flex;
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    box-shadow: 0px 0px 55px rgb(38 114 190 / 16%);
+    transition: all 0.4s;
+    position: absolute;
+    /* animation: makeItRain 7s ease-out; */
+  }
+  
+  @keyframes makeItRain {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateY(175vh);
+    }
+  }
+  
+  .prez-icones li:hover {
+    box-shadow: 0px 0px 55px rgb(38 114 190 / 25%);
+  }
+  
+  @media screen and (max-width: 968px) {
+    .prez-banner-bg {
+      position: relative;
+      display: block;
+    }
+    .prez-text {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      background: var(--white);
+      left: 50%;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+      width: 360px;
+      max-width: 70vw;
+    }
+  
+    .prez-text div {
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 970px) {
+    .prez-texte,
+    .prez-icones {
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 690px) {
+    .prez {
+      padding: 4rem 2rem;
+      display: block;
+    }
+  
+    .prez-texte,
+    .prez-icones {
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 970px) {
+    .prez-texte,
+    .prez-icones {
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 690px) {
+    .prez {
+      padding: 4rem 2rem;
+      display: block;
+    }
+  
+    .prez-texte,
+    .prez-icones {
+      padding: 0;
+    }
+  
+  }
