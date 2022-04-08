@@ -8,7 +8,7 @@
         "lien":"https://www.n-py.com",
         "id":"1",
         "type":"job",
-        "logo":"../img/logo.png",
+        "logo":"../img/logos/logo_npy_nb.png",
         "deschat":"Gestion et management d’une équipe de 6 personnes qui ont pour mission d’améliorer l’expérience client digitale globale de stations de ski (9 stations).",
         "longdesc":"Concrètement, cela se traduit par la rédaction de cahier des charges, la réalisation de prototypes et l'étude des problématiques rencontrées avec les développeurs. La principale difficulté : arriver à structurer des contenus à la fois efficaces pour les moteurs de recherche, et simples pour le sutilisateurs"
 
@@ -17,52 +17,91 @@
         "date":"2015-2018",
         "titre":"Assistant digital",
         "boite":"NPy Nouvelles Pyrénées",
-        "tags":"Emailing,Html,Css,Javascript, Ui Design",
+        "tags":"Emailing,Html,Css,Javascript, Ui Design, Drupal",
         "lien":"https://www.n-py.com",
         "id":"2",
         "type":"job",
-        "logo":"../img/logo.png",
-        "deschat":"Gestion et management d’une équipe de 6 personnes qui ont pour mission d’améliorer l’expérience client digitale globale de stations de ski (9 stations).",
-        "longdesc":"Concrètement, cela se traduit par la rédaction de cahier des charges, la réalisation de prototypes et l'étude des problématiques rencontrées avec les développeurs. La principale difficulté : arriver à structurer des contenus à la fois efficaces pour les moteurs de recherche, et simples pour le sutilisateurs"
+        "logo":"../img/logos/logo_npy_nb.png",
+        "deschat":"Membre d’une équipe de 3 personnes chargée dela gestion de l’écosystème digital d’un groupement de 9 stations de ski.",
+        "longdesc":"J’ai pu travailler principalement sur les campagnes d’acquisition et de notoriété, ainisi que sur l’UX design et le développement front-end du site web."
 
     },
     {
         "date":"2013-2015",
         "titre":"Responsable communication",
         "boite":"Gyromax.fr",
-        "tags":"tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6",
-        "lien":"maxijose.com",
+        "tags":"Prestashop,Wordpress,Seo,Sea,Print,Photoshop,Illustrator",
+        "lien":"https://gyromax.fr/",
         "id":"3",
-        "type":"job",
-        "logo":"../img/logo.png",
-        "deschat":"Gestion et management d’une équipe de 6 personnes qui ont pour mission d’améliorer l’expérience client digitale globale de stations de ski (9 stations).",
-        "longdesc":"Concrètement, cela se traduit par la rédaction de cahier des charges, la réalisation de prototypes et l'étude des problématiques rencontrées avec les développeurs. La principale difficulté : arriver à structurer des contenus à la fois efficaces pour les moteurs de recherche, et simples pour le sutilisateurs"
+        "type":"stage + job",
+        "logo":"../img/logos/logo_gyromax_nb.png",
+        "deschat":"Communication globale (print & web) pour un pure-player retail ( véhicules électriques). ",
+        "longdesc":"Création & acquisition de trafic pour les différents sites web, création de supports de communication physiques, édition vidéo & community management."
+
+    },
+    {
+        "date":"2013-2014",
+        "titre":"Bachelor Webmarketing",
+        "boite":"Escen Bordeaux | San Francisco",
+        "tags":"Prestashop,Wordpress,Seo,Sea,Print,Photoshop,Illustrator,Rédaction web, Mailchimp",
+        "lien":"https://www.escen.fr/",
+        "id":"4",
+        "type":"Études",
+        "logo":"../img/logos/logo_escen_nb.png",
+        "deschat":"Bac +3 en école de web",
+        "longdesc":"Acquisition des compétences de base et découverte de l'écosystème du webmarketing. Formation polyvalent mêlant intégration, webdesign, webmarketing et communication généraliste."
 
     },
     {
         "date":"2012-2013",
-        "titre":"Réceptionniste",
-        "boite":"Hôtel Parc Beaumont",
-        "tags":"tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6",
-        "lien":"maxijose.com",
-        "id":"4",
+        "titre":"Chargé d'acceuil & réservations",
+        "boite":"Hôtel Accor Parc Beaumont",
+        "tags":"Anglais,Espagnol,Otas",
+        "lien":"https://www.hotel-parc-beaumont.com/",
+        "id":"5",
         "type":"job",
-        "logo":"../img/logo.png",
-        "deschat":"Gestion et management d’une équipe de 6 personnes qui ont pour mission d’améliorer l’expérience client digitale globale de stations de ski (9 stations).",
-        "longdesc":"Concrètement, cela se traduit par la rédaction de cahier des charges, la réalisation de prototypes et l'étude des problématiques rencontrées avec les développeurs. La principale difficulté : arriver à structurer des contenus à la fois efficaces pour les moteurs de recherche, et simples pour le sutilisateurs"
+        "logo":"../img/logos/logo_hpb_nb.png",
+        "deschat":"Accueil des clients et gestion des réservations et TO au sein du Groupe Accor.",
+        "longdesc":"Missions diverses et variées, allant de l'accueil client et transport des valises à la gestion des différents canaux de réservation en ligne, en passant par l'automatisation des procédures répétitives."
 
     },
     {
         "date":"2011-2012",
         "titre":"Réceptionniste - Alternance",
         "boite":"Le RexHotel",
-        "tags":"tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6",
+        "tags":"Anglais,Espagnol,Otas",
         "lien":"maxijose.com",
-        "id":"5",
-        "type":"job",
-        "logo":"../img/logo.png",
-        "deschat":"Gestion et management d’une équipe de 6 personnes qui ont pour mission d’améliorer l’expérience client digitale globale de stations de ski (9 stations).",
-        "longdesc":"Concrètement, cela se traduit par la rédaction de cahier des charges, la réalisation de prototypes et l'étude des problématiques rencontrées avec les développeurs. La principale difficulté : arriver à structurer des contenus à la fois efficaces pour les moteurs de recherche, et simples pour le sutilisateurs"
+        "id":"6",
+        "type":"alternance",
+        "logo":"../img/logos/logo_rex_nb.png",
+        "deschat":"Accueil des clients et gestion des réservations et TO au sein du Groupe Accor.",
+        "longdesc":"Missions diverses et variées, allant de l'accueil client et transport des valises à la gestion des différents canaux de réservation en ligne, en passant par l'automatisation des procédures répétitives."
+
+    }
+    {
+        "date":"2011-2012",
+        "titre":"Licence profesionnelle Cogesht",
+        "boite":"Iut Paul Sabatier",
+        "tags":"jimdo,e-tourisme, communication, thermoludisme, gestion de projet",
+        "lien":"https://formation-cogesht.fr/",
+        "id":"7",
+        "type":"études",
+        "logo":"../img/logos/logo_iut_nb.png",
+        "deschat":"Études de tourisme & e-tourisme, en alternance au RexHôtel",
+        "longdesc":"Apprentissage de principes de marketing touristique de base, création de sites web (basiques) de structures touristiques, constitution de dossiers d'homologation."
+
+    }
+    {
+        "date":"2009-2011",
+        "titre":"D.U.T Gestion des entreprises & administrations",
+        "boite":"Iut Paul Sabatier",
+        "tags":"excel,analyse financier, gestion générale",
+        "lien":"https://www.iut-tarbes.fr/b-u-t-gea",
+        "id":"7",
+        "type":"études",
+        "logo":"../img/logos/logo_iut_nb.png",
+        "deschat":"Études généralistes de gestion des entreprises & administrations",
+        "longdesc":"Honnêtement, je me suis trompé sur ce coup-là. Mais j'en retire quand même une expérience positive : cela m'a permis de monter en compétence sur Excel et sur l'analyse statistique."
 
     }
 
