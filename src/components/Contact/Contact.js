@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Widget } from '@typeform/embed-react';
 import { PopupButton } from '@typeform/embed-react';
-import { ContactUs } from '../form';
+import { ContactUs } from './form';
 
 class Contact extends React.Component {
   render() {
