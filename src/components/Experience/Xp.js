@@ -30,7 +30,7 @@ class Xp extends React.Component {
 
   //Appel de l'api
   async componentDidMount() {
-    const url = 'https://raw.githubusercontent.com/Goodal1/react-site-cv/master/src/components/Xp/data.json';
+    const url = 'https://raw.githubusercontent.com/Goodal1/react-site-cv/master/src/components/Experience/data.json';
     const response = await fetch(url);
     const data = await response.json();
 
