@@ -1,7 +1,7 @@
 
 [
     {	
-        "date":"2018-2021",
+        "date":"2018-Aujourd'hui",
         "titre":"Responsable Digital",
         "boite":"NPy Nouvelles Pyrénées",
         "tags":"Management, Gestion de projet, Expression de besoin, Relation fournisseurs, Ui Design",
@@ -9,7 +9,7 @@
         "id":"1",
         "type":"emploi",
         "logo":"../img/logos/logo_npy_nb.png",
-        "deschat":"Manager d’une équipe de 5 personnes chargée de la gestion de l’écosystème digital d’un groupement de 9 stations de ski.",
+        "deschat":"Manager d’une équipe de 6 personnes chargée de la gestion de l’écosystème digital d’un groupement de 9 stations de ski.",
         "longdesc":"Concrètement, cela se traduit par la rédaction de cahier des charges, la réalisation de prototypes et l'étude des problématiques rencontrées avec les développeurs. La principale difficulté : arriver à structurer des contenus à la fois efficaces pour les moteurs de recherche, et simples pour les utilisateurs."
 
     },
@@ -23,7 +23,7 @@
         "type":"emploi",
         "logo":"../img/logos/logo_npy_nb.png",
         "deschat":"Membre d’une équipe de 3 personnes chargée de la gestion de l’écosystème digital d’un groupement de 9 stations de ski.",
-        "longdesc":"J’ai principalement eu la chance sur les campagnes d’acquisition et de notoriété de la marque, ainsi que sur l’UX design et le développement front-end du site web. Rôle polyvalent, qui m'a permis de construire des bases solides."
+        "longdesc":"J’ai principalement eu la chance de travailler sur les campagnes d’acquisition et de notoriété de la marque, ainsi que sur l’UX design et le développement front-end du site web. Rôle polyvalent, qui m'a permis de construire des bases solides."
 
     },
     {
@@ -54,7 +54,7 @@
     },
     {
         "date":"2012-2013",
-        "titre":"Chargé d'acceuil & réservations",
+        "titre":"Chargé d'accueil & réservations",
         "boite":"Hôtel Accor Parc Beaumont",
         "tags":"Anglais,Espagnol,Otas",
         "lien":"https://www.hotel-parc-beaumont.com/",
@@ -101,7 +101,7 @@
         "type":"études",
         "logo":"../img/logos/logo_iut_nb.png",
         "deschat":"Études généralistes de gestion des entreprises & administrations",
-        "longdesc":"Honnêtement, je me suis trompé sur ce coup-là. Mais j'en retire quand même une expérience positive : cela m'a permis de monter en compétence sur Excel et sur l'analyse statistique, pour lesquels j'ai gardé un attrait important."
+        "longdesc":"Formation généraliste en gestion d'entreprise, analyse financière, comptabilité et fiscalité. Objectivement pas ma meilleure idée, mais cela m'a beaucoup permis de progresser sur Excel, et de découvrir la programmation par ce biais :)"
 
     }
 

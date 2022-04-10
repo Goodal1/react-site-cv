@@ -215,10 +215,10 @@ header {
     text-indent: 50px;
     width: 39px;
     height: 22px;
-    background: var(--red);
+    background: #c6c7c9;
     display: block;
     border-radius: 100px;
-    border: 1px solid var(--red);
+    border: 1px solid #c6c7c9;
     position: relative;
     color: var(--text);
   }
@@ -236,7 +236,8 @@ header {
   }
   
   .darkmode-container input:checked + label {
-    background: var(--red);
+    background: #39d8b4;
+    border: 1px solid #39d8b4;
   }
   
   .darkmode-container input:checked + label:after {

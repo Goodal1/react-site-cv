@@ -13,7 +13,7 @@ class XpPopUp extends React.Component {
         <div>
           <img src="../img/icons/ic-close.svg" alt="" className="close-popup" onClick={this.closePopup} />
         </div>
-        <span>2020-2021</span>
+        <span>{this.props.date}</span>
         <h2>{this.props.title}</h2>
         <span className="popup-jobtype">{this.props.type}</span>
         <p>
