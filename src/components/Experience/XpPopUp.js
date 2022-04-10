@@ -15,7 +15,7 @@ class XpPopUp extends React.Component {
         </div>
         <span>2020-2021</span>
         <h2>{this.props.title}</h2>
-        <img className="job-logo" src="../img/icons/homme-robot.png" />
+        <span className="popup-jobtype">{this.props.type}</span>
         <p>
           <b>{this.props.deschat}</b>
         </p>

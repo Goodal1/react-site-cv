@@ -15,7 +15,7 @@ class Portfolio extends React.Component {
             </p>
           </div>
         </div>
-        <div>
+        {/* <div>
           <div className="portfolio-mosaic">
             <div>
               <img src="../img/Vignette.png" />
@@ -42,7 +42,7 @@ class Portfolio extends React.Component {
               <a href="#">Voir le projet</a>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     );
   }

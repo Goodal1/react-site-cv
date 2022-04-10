@@ -20,6 +20,7 @@ class Xp extends React.Component {
         img: 'img',
         deschat: 'deschat',
         longdesc: 'longdesc',
+        type: 'type',
       },
     };
 
@@ -81,6 +82,7 @@ class Xp extends React.Component {
         title: dataList.titre,
         deschat: dataList.deschat,
         longdesc: dataList.longdesc,
+        type: dataList.type,
       },
     });
 
@@ -133,7 +135,7 @@ class Xp extends React.Component {
           <div className="xp-image">
             <img src="img/robby-doigt.png" />
           </div>
-          <XpPopUp title={this.state.currentItem.title} deschat={this.state.currentItem.deschat} longdesc={this.state.currentItem.longdesc}></XpPopUp>
+          <XpPopUp title={this.state.currentItem.title} deschat={this.state.currentItem.deschat} longdesc={this.state.currentItem.longdesc} type={this.state.currentItem.type}></XpPopUp>
         </div>
       </section>
     );

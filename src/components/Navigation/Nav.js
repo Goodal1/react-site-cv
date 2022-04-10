@@ -40,12 +40,14 @@ class Nav extends React.Component {
       root.style.setProperty('--white', '#26283B');
       root.style.setProperty('--text', '#dedee3');
       root.style.setProperty('--background', '#0a0619');
+      root.style.setProperty('--line', '#404364');
     } else {
       root.style.setProperty('--dark1', '#fff');
       root.style.setProperty('--dark2', '#F4F7F6');
       root.style.setProperty('--white', '#fff');
       root.style.setProperty('--text', '#26283b');
       root.style.setProperty('--background', '#f1fdff');
+      root.style.setProperty('--line', '#e9eced');
     }
 
     return (
