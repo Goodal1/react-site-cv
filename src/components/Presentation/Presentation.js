@@ -44,7 +44,7 @@ class Presentation extends React.Component {
               </p>
               <h2>Je gère des projets web !</h2>
               <p>
-                <b>Travaillant dans le web & le digital depuis 2013, j'ai eu la chance de toucher à beaucoup d'aspects de la création et de la promotion de produits digitaux</b>
+                <b>Travaillant dans le web & le digital depuis 2013, j'ai eu la chance de toucher à beaucoup d'aspects de la création et de la promotion de produits digitaux.</b>
               </p>
 
               <p>Développement front-end, webdesign, webmarketing, gestion de projet, pilotage de prestataires...</p>
