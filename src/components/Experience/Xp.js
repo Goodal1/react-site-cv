@@ -88,11 +88,21 @@ class Xp extends React.Component {
     });
 
     this.deployPopup();
+    this.fillDataLayer(event);
   }
 
   deployPopup() {
     const popup = document.querySelector('.xp-popup');
     popup.style.display = 'block';
+  }
+
+  fillDataLayer(e) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'clic_item_experience',
+      experience_cliquee: e.target.dataset.ganame,
+    });
+    console.log(window.dataLayer);
   }
 
   //Affichage html

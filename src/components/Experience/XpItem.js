@@ -17,7 +17,7 @@ class XpItem extends React.Component {
     }
 
     return (
-      <div className="xp-slider-item" id={this.props.id} onClick={this.props.clic.bind(this)} data-dateslist={datesList}>
+      <div className="xp-slider-item" id={this.props.id} onClick={this.props.clic.bind(this)} data-dateslist={datesList} data-ganame={this.props.titre}>
         <p className="xp-date">
           {this.props.startDate}-{this.props.endDate}
         </p>
