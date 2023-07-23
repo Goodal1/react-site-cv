@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import fontawesomeIcon module
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faBolt, faSignal, faList } from '@fortawesome/free-solid-svg-icons';
 
 class Nav extends React.Component {
   constructor(props) {
@@ -53,24 +57,38 @@ class Nav extends React.Component {
     return (
       <header>
         <div className="logo-container">
-          <img src="../img/logo.png" alt="" />
+          <a href="/">
+            <img src="../img/logo.png" alt="" />
+          </a>
         </div>
         <div className="menu-container">
           <ul>
             <li>
-              <a href="./">Accueil</a>
+              <a href="./">
+                <FontAwesomeIcon icon={faBolt} />
+                Accueil
+              </a>
             </li>
             <li>
-              <a href="./presentation">Présentation</a>
+              <a href="./presentation">
+                <FontAwesomeIcon icon={faBolt} />
+                Présentation
+              </a>
             </li>
             <li>
-              <a href="/experience">Expérience</a>
+              <a href="/experience">
+                <FontAwesomeIcon icon={faBolt} />
+                Expérience
+              </a>
             </li>
             {/* <li>
               <a href="/portfolio">Porfolio</a>
             </li> */}
             <li>
-              <a href="/contact">Contact</a>
+              <a href="/contact">
+                <FontAwesomeIcon icon={faBolt} />
+                Contact
+              </a>
             </li>
           </ul>
         </div>

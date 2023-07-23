@@ -16,7 +16,6 @@ function App() {
   return (
     <Router>
       <div>
-        <Navmobile />
         <Nav />
         <Route path="/" exact component={Mainbanner} />
         <Route path="/presentation" component={Presentation} />
