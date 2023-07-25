@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 // import fontawesomeIcon module
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { faBolt, faSignal, faList } from '@fortawesome/free-solid-svg-icons';
+import { faGamepad, faSignal, faList, faHome, faMessage, faFloppyDisk, faGhost } from '@fortawesome/free-solid-svg-icons';
 
 class Nav extends React.Component {
   constructor(props) {
@@ -65,19 +65,19 @@ class Nav extends React.Component {
           <ul>
             <li>
               <a href="./">
-                <FontAwesomeIcon icon={faBolt} />
+                <FontAwesomeIcon icon={faHome} />
                 Accueil
               </a>
             </li>
             <li>
               <a href="./presentation">
-                <FontAwesomeIcon icon={faBolt} />
+                <FontAwesomeIcon icon={faGhost} />
                 Présentation
               </a>
             </li>
             <li>
               <a href="/experience">
-                <FontAwesomeIcon icon={faBolt} />
+                <FontAwesomeIcon icon={faGamepad} />
                 Expérience
               </a>
             </li>
@@ -86,7 +86,7 @@ class Nav extends React.Component {
             </li> */}
             <li>
               <a href="/contact">
-                <FontAwesomeIcon icon={faBolt} />
+                <FontAwesomeIcon icon={faMessage} />
                 Contact
               </a>
             </li>
@@ -94,7 +94,9 @@ class Nav extends React.Component {
         </div>
         <div className="darkmode-container">
           <input type="checkbox" defaultChecked={this.state.isChecked === 'true' ? true : false} name="" id="darkmode" onClick={this.darkMode} />
-          <label for="darkmode">Darkmode</label>
+          <label for="darkmode">
+            <span>Darkmode</span>{' '}
+          </label>
         </div>
       </header>
     );
