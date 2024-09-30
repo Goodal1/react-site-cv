@@ -42,7 +42,9 @@ class Presentation extends React.Component {
               <p>
                 Ce que je <b>fais ?</b>
               </p>
-              <h2>Je gère des projets web !</h2>
+              <h2>
+                Je gère<br></br> des projets web !
+              </h2>
               <p>
                 <b>Travaillant dans le web & le digital depuis 2013, j'ai eu la chance de toucher à beaucoup d'aspects de la création et de la promotion de produits digitaux.</b>
               </p>

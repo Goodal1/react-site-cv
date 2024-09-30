@@ -264,8 +264,8 @@ header li a:hover {
 @media screen and (max-width: 690px) {
   header {
     font-size: 1rem;
-    background: var(--white);
-    min-height: 5rem;
+    background: var(--background);
+    height: calc(10vh - 1px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -279,14 +279,15 @@ header li a:hover {
   .menu-container {
     position: absolute;
     width: 90vw;
-    bottom: 5vw;
+    bottom: 3vw;
     left: 5vw;
     z-index: 99;
-    background: var(--white);
+    background: var(--background);
     font-weight: 400;
     font-size: 0.7em;
-    border-radius: 8px;
+    border-radius: 30px 30px 30px 30px;
     box-shadow: 0px 0px 58px #9f7bdf9e;
+    padding: 13px 0px;
   }
 
   .menu-container {
@@ -303,7 +304,7 @@ header li a:hover {
   .menu-container li svg {
     display: block;
     margin: 0px auto 5px auto;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .darkmode-container span {

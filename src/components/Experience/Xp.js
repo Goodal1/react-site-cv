@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
 
@@ -22,14 +22,18 @@ class Xp extends React.Component {
         longdesc: 'longdesc',
         type: 'type',
       },
+      posy: '5%',
     };
 
     this.componentDidMount = this.componentDidMount.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.getMousePosition = this.getMousePosition.bind(this);
   }
 
   //Appel de l'api
   async componentDidMount() {
+    document.querySelector('.xp-image').style.top = `${this.state.posy}`;
+
     const url = 'https://raw.githubusercontent.com/Goodal1/react-site-cv/master/src/components/Experience/data.json';
     const response = await fetch(url);
     const data = await response.json();
@@ -105,56 +109,76 @@ class Xp extends React.Component {
     console.log(window.dataLayer);
   }
 
+  // get the mouse position
+  getMousePosition(e) {
+    let posy = 0;
+
+    posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+    // get scroll depth
+    const scrollDepth = window.scrollY;
+
+    this.setState({
+      posy: `${posy - 350}px`,
+    });
+
+    document.querySelector('.xp-image').style.top = this.state.posy;
+    console.log(scrollDepth);
+  }
+
   //Affichage html
 
   render() {
     return (
-      <section className="xp">
-        <div className="xp-container">
+      <Fragment>
+        <section className="xp-container" onMouseMove={this.getMousePosition}>
+          <h2>Expériences</h2>
+          <p>Retrouvez ci-dessous les différentes expériences que j'ai pu réaliser lors des dernières années</p>
           <div className="xp-slider-container">
-            {this.state.loading
-              ? 'chargement'
-              : this.state.data.map((ele) => {
-                  const startDate = parseInt(Array.from(ele.date.split('-'))[0]);
-                  const endDate = parseInt(Array.from(ele.date.split('-'))[1]);
-                  const range = [];
-                  for (let i = startDate; i < endDate + 1; i++) {
-                    range.push(i);
-                  }
+            <div className="xp-slider">
+              {this.state.loading
+                ? 'chargement'
+                : this.state.data.map((ele) => {
+                    const startDate = parseInt(Array.from(ele.date.split('-'))[0]);
+                    const endDate = parseInt(Array.from(ele.date.split('-'))[1]);
+                    const range = [];
+                    for (let i = startDate; i < endDate + 1; i++) {
+                      range.push(i);
+                    }
 
-                  return (
-                    <XpItem
-                      clic={this.handleClick}
-                      key={ele.id}
-                      id={ele.id}
-                      type={ele.type}
-                      startDate={startDate}
-                      endDate={endDate}
-                      range={range}
-                      titre={ele.titre}
-                      boite={ele.boite}
-                      tags={Array.from(ele.tags.split(','))}
-                      lien={ele.lien}
-                      deschat={ele.deschat}
-                      longdesc={ele.longdesc}
-                      logo={ele.logo}
-                    />
-                  );
-                })}
+                    return (
+                      <XpItem
+                        clic={this.handleClick}
+                        key={ele.id}
+                        id={ele.id}
+                        type={ele.type}
+                        startDate={startDate}
+                        endDate={endDate}
+                        range={range}
+                        titre={ele.titre}
+                        boite={ele.boite}
+                        tags={Array.from(ele.tags.split(','))}
+                        lien={ele.lien}
+                        deschat={ele.deschat}
+                        longdesc={ele.longdesc}
+                        logo={ele.logo}
+                      />
+                    );
+                  })}
+            </div>
           </div>
 
           <div className="xp-image">
             <img src="img/robby-doigt.png" />
           </div>
-          <XpPopUp
-            title={this.state.currentItem.title}
-            deschat={this.state.currentItem.deschat}
-            longdesc={this.state.currentItem.longdesc}
-            type={this.state.currentItem.type}
-            date={this.state.currentItem.date}
-          ></XpPopUp>
-        </div>
-      </section>
+        </section>
+        <XpPopUp
+          title={this.state.currentItem.title}
+          deschat={this.state.currentItem.deschat}
+          longdesc={this.state.currentItem.longdesc}
+          type={this.state.currentItem.type}
+          date={this.state.currentItem.date}
+        ></XpPopUp>
+      </Fragment>
     );
   }
 }

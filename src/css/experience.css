@@ -1,31 +1,25 @@
 .xp {
-  height: 90vh;
-  overflow: hidden;
   width: 100%;
   box-sizing: border-box;
 }
 
 .xp-container {
   background: var(--background);
-  padding: 0 4%;
-  text-align: center;
   box-sizing: border-box;
   overflow: hidden;
   height: 100%;
   color: var(--text);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 100px 20% 100px 20%;
+  position: relative;
 }
 
 .xp-slider-container {
-  overflow-x: hidden;
   position: relative;
-  width: 50vw;
-  padding-bottom: 10px;
+  overflow-x: scroll;
   text-align: left;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
+/* Hide scrollbar for Chrome, Safari and Opera
 .xp-slider-container::-webkit-scrollbar {
   display: none;
 }
@@ -34,16 +28,21 @@
 .xp-slider-container {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  overflow: visible;
+}
+
+.xp-slider {
+  display: block;
 }
 
 .xp-slider-item {
-  margin: 20px 0px;
+  margin: 40px 0px;
   background: var(--white);
-  padding: 30px;
+  padding: 50px;
   box-sizing: border-box;
-  width: 70%;
+  max-width: 615px;
   box-shadow: 0px 0px 55px rgb(38 114 190 / 16%);
-  margin: 40px auto;
+
   border-radius: 15px;
   animation: makeItPop 0.7s forwards;
   cursor: pointer;
@@ -79,8 +78,8 @@
   font-size: 0.7em;
   display: inline-block;
   border-radius: 32px;
-  background: var(--background);
-  color: var(--text);
+  background: #3f51b5;
+  color: #fff;
 }
 
 .xp-type {
@@ -88,9 +87,10 @@
   padding: 4px 9px;
   font-size: 12px;
   border-radius: 32px;
-  background: #ffa264;
+  background: var(--line);
   color: #fff;
   display: inline-block;
+  color: var(--text);
 }
 
 .xp-taglist {
@@ -133,16 +133,22 @@
   font-weight: bold;
 }
 
-.xp-image img {
+.xp-image {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  left: 0px;
+
+  transform: translateX(-37%) scaleX(-1) rotate(-28deg);
+  height: 400px;
+}
+
+.xp-image img {
+  height: 100%;
 }
 
 .xp-popup {
-  position: absolute;
+  position: fixed;
   height: 100vh;
-  width: 50vw;
+  width: 100vw;
   background: var(--white);
   color: var(--text);
   top: 0;
